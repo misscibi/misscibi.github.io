@@ -46,10 +46,13 @@
     <!-- Custom JavaScript to open the chat widget -->
     <script>
         function openBotpressChat() {
-            if (window.botpressWebChat) {
+            //if (window.botpressWebChat) {
                 // window.botpressWebChat.open() is used here as requested. 
                 // This will display the chat widget if it is hidden.
-                window.botpressWebChat.open();
+                //window.botpressWebChat.open();
+            //}
+            if (window.botpress) {
+                window.botpress.sendEvent({ type: 'show' });
             }
         }
     </script>
