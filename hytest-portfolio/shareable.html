@@ -42,6 +42,17 @@
     <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2025/10/24/09/20251024091056-N5T0L386.js" defer></script>
     <!-- End Botpress Scripts -->
+    
+    <!-- Custom JavaScript to open the chat widget -->
+    <script>
+        function openBotpressChat() {
+            if (window.botpressWebChat) {
+                // window.botpressWebChat.open() is used here as requested. 
+                // This will display the chat widget if it is hidden.
+                window.botpressWebChat.open();
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-gray-900 text-gray-100 antialiased">
@@ -73,8 +84,8 @@
             <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10">
                 AI Chatbot transforms data interaction, delivering instant, accurate, and context-aware responses to power your business decisions.
             </p>
-            <!-- Call to Action - Encourages opening the chat widget -->
-            <button onclick="window.botpressWebChat.sendEvent({ type: 'show' })"
+            <!-- Call to Action - Now calls the openBotpressChat() function -->
+            <button onclick="openBotpressChat()"
                 class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-lg font-bold rounded-full text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
                 Try our AI Chatbot Now
                 <!-- Icon for interaction -->
