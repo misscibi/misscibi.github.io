@@ -49,7 +49,7 @@
     <!-- Navigation Header -->
     <header class="sticky top-0 z-10 bg-gray-900/90 backdrop-blur-sm shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-extrabold text-blue-400 tracking-tight">Hytest AI</h1>
+            <h1 class="text-3xl font-extrabold text-blue-400 tracking-tight">AI Chatbot</h1>
             <nav>
                 <a href="#features" class="text-gray-300 hover:text-blue-400 transition duration-150 ease-in-out font-medium mr-4 hidden sm:inline">Features</a>
                 <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-150 ease-in-out font-medium hidden sm:inline">Contact</a>
@@ -57,16 +57,21 @@
         </div>
     </header>
 
+    <!--
+        The main content is contained within a max-width of 7xl (about 1280px).
+        This provides excellent readability on wide screens while maintaining a professional,
+        centered look on monitors larger than that.
+    -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- 1. Hero Section -->
         <section class="text-center py-20 md:py-32">
-            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+            <h2 class="text-5xl md:text-7xl xl:text-8xl font-extrabold mb-4 leading-tight">
                 The Next Generation of
                 <span class="text-blue-400 block mt-2">Intelligent Chatbots</span>
             </h2>
             <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10">
-                Our AI Chatbot transforms data interaction, delivering instant, accurate, and context-aware responses to power your business decisions.
+                AI Chatbot transforms data interaction, delivering instant, accurate, and context-aware responses to power your business decisions.
             </p>
             <!-- Call to Action - Encourages opening the chat widget -->
             <button onclick="window.botpressWebChat.sendEvent({ type: 'show' })"
@@ -78,6 +83,69 @@
                 </svg>
             </button>
         </section>
+
+        <!-- 2. Features Section -->
+        <section id="features" class="py-16 md:py-24 border-t border-gray-800">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-50">Core Capabilities</h3>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                
+                <!-- Feature Card 1: Contextual Understanding -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-blue-500/30 transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19C7.895 19 7 18.105 7 17s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 0c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm-7-2h2v4H9v-4z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-3">Deep Contextual Memory</h4>
+                    <p class="text-gray-400">
+                        Our AI retains conversation history across sessions, providing a seamless, personalized experience every time you interact.
+                    </p>
+                </div>
+                
+                <!-- Feature Card 2: Real-time Data Access -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-blue-500/30 transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-3">Instant Data Synthesis</h4>
+                    <p class="text-gray-400">
+                        Our AI chatbot integrates with various data sources to deliver up-to-the-minute information and comprehensive analysis in milliseconds.
+                    </p>
+                </div>
+
+                <!-- Feature Card 3: Multilingual Support -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-blue-500/30 transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.06 4.318A4 4 0 0015 11a4 4 0 00-2.83-1.17 6.9 6.9 0 01-1.28-1.28 4 4 0 00-1.17-2.83 4 4 0 00-4 4 4 4 0 001.17 2.83c.3.3.62.58.97.83M12 21h9M12 17h9M12 13h9" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-3">Global Language Model</h4>
+                    <p class="text-gray-400">
+                        Communicate naturally in any language. Our model is trained for robust multilingual support, ensuring global accessibility.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. Final Call to Action / Contact -->
+        <section id="contact" class="py-16 md:py-24 text-center border-t border-gray-800">
+            <h3 class="text-4xl font-bold mb-4 text-gray-50">Ready to Elevate Your Productivity?</h3>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                Experience the difference of a truly intelligent conversational partner. Click the button below to start your free demo.
+            </p>
+            <a href="mailto:cnalangan@gmail.com"
+                class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 cta-button">
+                Contact Sales Team
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Or simply use the chat widget in the corner!</p>
+        </section>
+        
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-950 mt-12 py-8 border-t border-gray-800">
